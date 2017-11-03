@@ -33,20 +33,8 @@ def isa(altitude):
 	density = pressure / (R * temperature)
 	strformat = 'Temperature: {0:.2f} k \nPressure: {1:.2f} Pa \nDensity: {2:.4f} kg/m3'
 	print(strformat.format(temperature, pressure, density))
-    
+	
 var = float(input("Please enter the altitude: ")) # the input gives a string so we need to use float to convert the string to number so isa can work
 print()
 print('Your variables for this altitude are:')
 isa(var) # finally this gives the temperature,pressure and density at the altitude you inputed
-
-#if __name__ == '__main__':
-	## command line option
-	#if len(sys.argv) != 2:
-	#	print("Usage: ./isa.py <altitude>")
-	#	sys.exit(-1)
-	#try:
-	#	altitude = float(sys.argv[1])
-	#except:
-	#	print("Wrong altitude format!")
-	#	sys.exit(-2)
-	#isa(altitude)
