@@ -39,7 +39,7 @@ def isa(altitude):
 	strformat = 'Temperature: {0:.4f} k \nPressure: {1:.4f} Pa \nDensity: {2:.5f} kg/m3'
 	print(strformat.format(temperature, pressure, density))
 	
-var = float(input("Please enter the altitude: ")) # the input gives a string so we need to use float to convert the string to number so isa can work
+var = float(input("Please enter the altitude in meters: ")) # the input gives a string so we need to use float to convert the string to number so isa can work
 if var < 12000 and var > 0:
   print('This is the Troposphere. Your quantities are:')
 elif var >= 12000 and var < 50000:
