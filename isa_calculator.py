@@ -1,4 +1,9 @@
-#import sys
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov  3 00:56:07 2017
+Standart Atmosphere Calculator
+@author: Dan
+"""
 import math
 
 g = 9.80665
